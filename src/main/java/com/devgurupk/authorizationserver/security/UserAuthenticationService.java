@@ -23,7 +23,7 @@ public class UserAuthenticationService implements UserDetailsService
     {
         return userRepository.findByEmailIgnoreCaseAndStatus(username, WebUser.STATUS_ACTIVE)
                 .map(webUser -> {
-                    if (webUser.isActive())
+                    if (webUser.isActiv())
                     {
                         return new AuthUserInfo(webUser, Collections.emptyList(), true);
                     }

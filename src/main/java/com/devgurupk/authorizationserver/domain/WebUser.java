@@ -32,10 +32,10 @@ public class WebUser extends BaseEntity
 
 	@Column(name = "password", length = 255)
     @JsonIgnore
-	private String password;
+	private String pass;
 
     @Column(name = "active")
-    private boolean active;
+    private boolean activ;
 
     @Column(name = "status")
     private Integer status;

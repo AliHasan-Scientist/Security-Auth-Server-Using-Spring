@@ -13,7 +13,8 @@ public interface WebUserRepository extends JpaRepository<WebUser, Long>, JpaSpec
 {
     Optional<WebUser> findByEmailIgnoreCaseAndStatus(String userName, Integer status);
 
-    Optional<WebUser> findByWebIdAndActiveAndStatus(Long webId, boolean active, Integer status);
+//    Optional<WebUser> findByWebIdAndActivAndStatus(Long webId, boolean active, Integer status);
+    Optional<WebUser> findByWebIdAndActivAndStatus(Long webId, boolean active, Integer status);
 
     int countByEmailIgnoreCaseAndStatus(String userName, Integer status);
 }

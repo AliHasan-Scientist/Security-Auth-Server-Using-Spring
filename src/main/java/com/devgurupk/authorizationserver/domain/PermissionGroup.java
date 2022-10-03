@@ -17,7 +17,7 @@ public class PermissionGroup extends BaseEntity
     private Long parentWebId;
 
     @Column(nullable = true, name = "description")
-    private String description;
+    private String descrip;
 
     @Column(nullable = true, name = "group_code")
     private String groupCode;

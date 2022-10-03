@@ -16,7 +16,7 @@ public class Role extends BaseEntity
     }
 
     @Column(length = 255)
-    private String description;
+    private String descript;
 
     @Column(length = 255)
     private String title;
@@ -39,5 +39,5 @@ public class Role extends BaseEntity
 
     @Enumerated(EnumType.STRING)
     @Column(name = "use")
-    private RoleUse use;
+    private RoleUse uses;
 }

@@ -28,7 +28,7 @@ public class AuthUserInfo implements UserDetails
         this.webId = webUser.getWebId();
         this.userName = webUser.getEmail();
         this.name = webUser.getFirstName() + " " + webUser.getLastName();
-        this.password = webUser.getPassword();
+        this.password = webUser.getPass();
     }
 
     @Override
